@@ -1,6 +1,6 @@
 package one.digitalinnovation;
 
-public class No {
+public class No<T> {
 
     private T conteudo;
     private No proximoNo;
@@ -9,7 +9,7 @@ public class No {
         this.proximoNo = null;
 
     }
-    
+
     public No(T conteudo) {
         this.proximoNo = null;
         this.conteudo = conteudo;
@@ -40,15 +40,15 @@ public class No {
     public String toString() {
         return "No [conteudo=" + conteudo + "]";
     }
-    
+
     public String toStringEncadedado() {
         String str = "No [conteudo=" + conteudo + "]";
-        if(proximoNo != null) {
+        if (proximoNo != null) {
             str += "->" + proximoNo.toString();
         } else {
             str += "->null";
         }
-    
+
         return str;
 
     }

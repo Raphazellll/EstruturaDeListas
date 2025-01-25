@@ -31,7 +31,7 @@ public class ListaEncadeada<T> {
         No<T> noRetorno = null;
         validaIndice(index);
 
-        for (int i = 0; i < this.size() - 1; i++) {
+        for (int i = 0; i <= index; i++) {
             noRetorno = noAuxiliar;
             noAuxiliar = noAuxiliar.getProximoNo();
         }
@@ -88,8 +88,7 @@ public class ListaEncadeada<T> {
             strRetorno += "[No{conteudo=" + noAuxiliar.getConteudo() + "}]--->";
             noAuxiliar = noAuxiliar.getProximoNo();
         }
-        return "No [conteudo=" + conteudo + "]";
-
+        strRetorno += "null";
         return strRetorno;
     }
 
