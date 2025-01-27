@@ -1,4 +1,4 @@
-package one.listaduplamenteencadeada;
+package one.lista;
 
 public class DuplamenteEncadeada<T> {
 
